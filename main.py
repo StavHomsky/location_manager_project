@@ -131,9 +131,14 @@ while True:
         filename = input("Enter file name to save: (e.g. name.json): ")
         # calls save data function
         dummy_data.save_data(locations, filename)
+    
+    elif  choice == "9" :
+         # Count all locations in the list
+        utils.count_locstions(locations)
+        input("\nPress Enter to continue...")
 
-    elif choice == "9":
-        # if the user enter "9", it will exit the app
+    elif choice == "10":
+        # if the user enter "10", it will exit the app
         break
 
     else:

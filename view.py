@@ -8,4 +8,5 @@ def menu():
     print("6.   Mark location as visited")
     print("7.   Load data")
     print("8.   Save data")
-    print("9.   Exit")
+    print("9.   Count Locations")
+    print("10.  Exit")
