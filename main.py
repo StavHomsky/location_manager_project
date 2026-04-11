@@ -134,8 +134,10 @@ while True:
 
     elif choice == "9":
         confirm = input("Are you sure you want to delete all locations? (y/n)")
-        if confirm == "y":
+        if confirm.lower() == "y":
             utils.delete_all_locations(locations)
+        else:
+            print("\nLocation not deleted")
         input("\nPress Enter to continue...")
 
     elif choice == "10":
