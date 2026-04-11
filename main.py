@@ -133,7 +133,15 @@ while True:
         dummy_data.save_data(locations, filename)
 
     elif choice == "9":
-        # if the user enter "9", it will exit the app
+        confirm = input("Are you sure you want to delete all locations? (y/n)")
+        if confirm.lower() == "y":
+            utils.delete_all_locations(locations)
+        else:
+            print("\nLocation not deleted")
+        input("\nPress Enter to continue...")
+
+    elif choice == "10":
+        # if the user enter "10", it will exit the app
         break
 
     else:
