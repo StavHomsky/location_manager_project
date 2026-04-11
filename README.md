@@ -84,6 +84,7 @@ python main.py
 Open for contribution
 -----------------------
 Three features to implement:
+
 ✔ 1. Delete all locations - add an option in the menu that allows the user to delete all the locations at once.
    When the user selects this option the system should ask for confirmation ("Are you sure you want to delete all locations? (y/n)")
    only if the user enters 'y' all locations should be deleted. Else, the operation should be canceled. after delete display a message: "All locations have been deleted".
