@@ -93,6 +93,7 @@ Three features to implement:
    When the user selects this option , display the sorted list to the user
 
 ✔ 3. Count locations - add an option in the menu that displays the total number of locations . Example output ("Total locations: 5")
+
 ✔ 4. Add user confirmation to add location - ask for confirmation ("Please type 'YES / NO' to confirm: ") if the user input is 'yes' print a masage that location added successfully
    else, print location not added  
    
