@@ -84,14 +84,16 @@ python main.py
 Open for contribution
 -----------------------
 Three features to implement:
-1. Delete all locations - add an option in the menu that allows the user to delete all the locations at once.
+✔ 1. Delete all locations - add an option in the menu that allows the user to delete all the locations at once.
    When the user selects this option the system should ask for confirmation ("Are you sure you want to delete all locations? (y/n)")
    only if the user enters 'y' all locations should be deleted. Else, the operation should be canceled. after delete display a message: "All locations have been deleted".
 
 2. Sort locations by location name - add an option in the menu that allows the user to sort the locations by name (A-Z).
    When the user selects this option , display the sorted list to the user
 
-3. Count locations - add an option in the menu that displays the total number of locations . Example output ("Total locations: 5")
+✔ 3. Count locations - add an option in the menu that displays the total number of locations . Example output ("Total locations: 5")
+✔ 4. Add user confirmation to add location - ask for confirmation ("Please type 'YES / NO' to confirm: ") if the user input is 'yes' print a masage that location added successfully
+   else, print location not added  
    
    
    
