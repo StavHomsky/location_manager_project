@@ -47,8 +47,7 @@ def mark_visited(locations , loc_id):
     locations[loc_id - 1]["visited"] = "✅"
     print("\nLocation marked as visited")
 
-def count_locstions(locations) :
-    Counter = len(locations)
-    print(f"You got {Counter} locations on your list")
+def count_locations(locations) :
+    print(f"You got {len(locations)} locations on your list")
 
     
