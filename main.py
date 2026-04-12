@@ -134,7 +134,7 @@ while True:
     
     elif  choice == "9" :
          # Count all locations in the list
-        utils.count_locstions(locations)
+        utils.count_locations(locations)
         input("\nPress Enter to continue...")
 
     elif choice == "10":
