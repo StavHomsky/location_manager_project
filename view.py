@@ -9,4 +9,5 @@ def menu():
     print("7.   Load data")
     print("8.   Save data")
     print("9.   Count Locations")
-    print("10.  Exit")
+    print("10.   Delete all locations")
+    print("11.  Exit")

@@ -41,6 +41,11 @@ def remove_location(locations, loc_id):
     # remove location from list
     locations.pop(loc_id - 1)
     print("\nLocation deleted!")
+
+# function that removes all locations from the list
+def delete_all_locations(locations):
+    locations.clear()
+    print("\nAll locations have been deleted")
        
 # function that marks a location as visited
 def mark_visited(locations , loc_id):
