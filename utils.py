@@ -32,9 +32,15 @@ def add_location(locations):
     name = input("Enter location name: ")
     country = input("Enter country name: ")
     type = input("Enter type of vacation: ")
-    # add the new location to the list
-    locations.append({"id": len(locations)+1 , "name": name , "country": country , "visited" : "❌" , "type" : type})
-    print("\nLocation added successfully")
+    new_location = {"id": len(locations)+1 , "name": name , "country": country , "type" : type , "visited" : "❌"}
+    print(f"\nnew location to be added: {new_location}")
+    user_conf = input(f"\nPlease type 'YES / NO' to confirm: ").lower()
+    if user_conf == "yes":
+        # add the new location to the list
+        locations.append(new_location)
+        print("\nLocation added successfully")
+    else:
+        print("\nLocation not added")
 
 # function that remove location in list by id
 def remove_location(locations, loc_id):
