@@ -131,8 +131,14 @@ while True:
         filename = input("Enter file name to save: (e.g. name.json): ")
         # calls save data function
         dummy_data.save_data(locations, filename)
+    
+    elif  choice == "9" :
+         # Count all locations in the list
+        utils.count_locations(locations)
+        input("\nPress Enter to continue...")
 
-    elif choice == "9":
+    elif choice == "10":
+        # Delete all locations in list. If the user doesnt confirm it will not be deleted
         confirm = input("Are you sure you want to delete all locations? (y/n)")
         if confirm.lower() == "y":
             utils.delete_all_locations(locations)
@@ -140,8 +146,8 @@ while True:
             print("\nLocation not deleted")
         input("\nPress Enter to continue...")
 
-    elif choice == "10":
-        # if the user enter "10", it will exit the app
+    elif choice == "11":
+        # if the user enter "11", it will exit the app
         break
 
     else:

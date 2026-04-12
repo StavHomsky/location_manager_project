@@ -51,3 +51,8 @@ def delete_all_locations(locations):
 def mark_visited(locations , loc_id):
     locations[loc_id - 1]["visited"] = "✅"
     print("\nLocation marked as visited")
+
+def count_locations(locations) :
+    print(f"You got {len(locations)} locations on your list")
+
+    
