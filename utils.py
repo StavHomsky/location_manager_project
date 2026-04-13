@@ -1,9 +1,30 @@
 # function that show all the locations in the list
 def show_locations(locations):
+    #matanmo - add menu to user for his choose how to show the list. add locations_print for get the sort
+    try: #matanmo - try to get valid input from user
+        user_choice = int(input("""==== SHOW LOCATIONS ====
+1. Sort by ID
+2. Sort by Name
+
+Choose an option: """))
+        print('') #spacer
+        if user_choice == 1: #matanmo - if user choose sort by id
+            print("The locations sort by ID:")
+            locations_print = locations
+        elif user_choice == 2: #matanmo - if user chose sort by name
+            print("The locations sort by Name:")
+            locations_print = sort_by_name(locations)
+        else: #matanmo - if user enter number but not 1 or 2 so run the default
+            print("Wrong number! The locations sort by ID as default:")
+            locations_print = locations
+    except ValueError: #matanmo - if user dont enter a valid input, run the default
+        print("\nWrong Input! The locations sort by ID as default:")
+        locations_print = locations
+    print('') #spacer
     print(f"{'ID':<5}{'Name':<15}{'Country':<15}{'Type':<10}{'Visited':<10}")
     print("-" * 55)
     # loop through locations list
-    for location in locations:
+    for location in locations_print:
         print(f"{location['id']:<5}{location['name']:<15}{location['country']:<15}{location['type']:<10}{location['visited']:<10}")
 
 # function that show only the locations of specific country 
@@ -62,3 +83,15 @@ def count_locations(locations) :
     print(f"You got {len(locations)} locations on your list")
 
     
+#matanmo - sort list by location name
+def sort_by_name(locations):
+    """
+    This function get locations list and sort it by name
+    Parameters:
+        location (list): list of locations
+    Return:
+        list: the sort list by name
+    """
+    #use sorted method for it
+    sort_list = sorted(locations, key=lambda x: x['name'].lower())
+    return sort_list
